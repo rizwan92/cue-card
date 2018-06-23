@@ -1,0 +1,51 @@
+import React, { Component } from "react";
+import CardItem from "./CardItem";
+import Modal from "../modal";
+export class Dashboard extends Component {
+  state = {
+    isModalOpen: true
+  };
+
+  onOpenModal = () => {
+    console.log("dhv");
+    this.setState({ isModalOpen: true });
+  };
+
+  onCloseModal = () => this.setState({ isModalOpen: false });
+
+  render() {
+    return (
+      <div className="mycontainer">
+        <Modal
+          isModalOpen={this.state.isModalOpen}
+          closeModal={this.onCloseModal}
+          style={modalStyle}
+        >
+          <h1>Add Card </h1>
+        </Modal>
+        <button
+          className="mdl-button mdl-js-button mdl-button--fab mdl-button--colored useraddbutton"
+          onClick={e => console.log(e)}
+        >
+          <i onClick={() => this.onOpenModal} className="material-icons">
+            add
+          </i>
+        </button>
+
+        <div className="card-container">
+          <CardItem />
+          <CardItem />
+          <CardItem />
+        </div>
+      </div>
+    );
+  }
+}
+
+export default Dashboard;
+
+const modalStyle = {
+  overlay: {
+    backgroundColor: "rgba(0, 0, 0,0.5)"
+  }
+};

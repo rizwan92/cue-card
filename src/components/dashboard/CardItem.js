@@ -1,15 +1,18 @@
-import React, {Component} from 'react';
+import React, { Component } from "react";
 
 export class CardItem extends Component {
-  render () {
+  render() {
     return (
-      <div className="demo-card-wide mdl-card mdl-shadow--2dp" style={{margin:5}}>
+      <div
+        className="demo-card-wide mdl-card mdl-shadow--2dp"
+        style={{ margin: 5 }}
+      >
         <div className="mdl-card__title">
           <h2 className="mdl-card__title-text">Welcome</h2>
         </div>
         <div className="mdl-card__supporting-text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Mauris sagittis pellentesque lacus eleifend lacinia...
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+          sagittis pellentesque lacus eleifend lacinia...
         </div>
         <div className="mdl-card__actions mdl-card--border">
           <a className="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">

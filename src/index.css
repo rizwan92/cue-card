@@ -1,5 +1,5 @@
-
-html, body {
+html,
+body {
   font-family: 'Roboto', 'Helvetica', sans-serif;
 }
 .demo-avatar {
@@ -7,7 +7,6 @@ html, body {
   height: 48px;
   border-radius: 24px;
 }
-
 
 .demo-layout .mdl-layout__header .mdl-layout__drawer-button {
   color: rgba(0, 0, 0, 0.54);
@@ -37,7 +36,6 @@ html, body {
   justify-content: flex-end;
   padding: 16px;
   height: 151px;
-
 }
 .demo-avatar-dropdown {
   display: flex;
@@ -54,20 +52,18 @@ html, body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  color: black!important;
+  color: black !important;
   font-weight: 500;
 }
 .demo-layout .demo-navigation .mdl-navigation__link:hover {
-  background-color: #00BCD4;
-  color: #37474F;
+  background-color: #00bcd4;
+  color: #37474f;
 }
 .demo-navigation .mdl-navigation__link .material-icons {
   font-size: 24px;
   color: rgba(255, 255, 255, 0.56);
   margin-right: 32px;
 }
-
-
 
 .demo-cards {
   align-items: flex-start;
@@ -92,7 +88,7 @@ html, body {
   background-repeat: no-repeat;
 }
 .demo-cards .mdl-card__actions a {
-  color: #00BCD4;
+  color: #00bcd4;
   text-decoration: none;
 }
 
@@ -128,7 +124,7 @@ html, body {
   z-index: 900;
 }
 .demo-list-control {
-  width:70%!important;
+  width: 70% !important;
   margin-top: 20px;
 }
 
@@ -141,33 +137,39 @@ html, body {
 .demo-card-wide > .mdl-card__title {
   color: #fff;
   height: 176px;
-  background: url('https://thumbs.dreamstime.com/t/wood-metallic-texture-background-rustic-banner-blue-tones-51204566.jpg') center / cover;
+  background: url('https://thumbs.dreamstime.com/t/wood-metallic-texture-background-rustic-banner-blue-tones-51204566.jpg')
+    center / cover;
 }
 .demo-card-wide > .mdl-card__menu {
   color: #fff;
 }
-.mdl-card__supporting-text{
-  margin: 2px!important;
-  padding: 5px!important;
+.mdl-card__supporting-text {
+  margin: 2px !important;
+  padding: 5px !important;
 }
 
 .mycontainer {
-  width: 100%;
-  min-height:90vh;
   display: flex;
   flex-direction: column;
-  padding: 10px;
+  padding-top: 100px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
-.useraddbutton{
+.useraddbutton {
   position: fixed;
-  bottom: 20px;
+  top: 80px;
   right: 20px;
 }
 
-.card-container{
+.card-container {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: center; 
+  justify-content: center;
+}
+
+.myinput {
+  height: 40px;
+  font-size: 20px;
 }
