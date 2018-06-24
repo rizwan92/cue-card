@@ -1,22 +1,14 @@
 import React, { Component } from "react";
-import Modal from "react-responsive-modal";
+import { withRouter } from "react-router-dom";
 
 export class Dashboard extends Component {
-  state = {
-    open: false
-  };
-
-  onOpenModal = () => this.setState({ open: true });
-  onCloseModal = () => this.setState({ open: false });
-
   render() {
-    const { open } = this.state;
     return (
       <div className="mycontainer">
         <h1>User Page</h1>
 
         <button
-          onClick={() => this.onOpenModal()}
+          onClick={() => this.props.history.push("/dashboard/adduser")}
           className="mdl-button mdl-js-button mdl-button--fab mdl-button--colored useraddbutton"
         >
           <i className="material-icons">add</i>
@@ -50,42 +42,9 @@ export class Dashboard extends Component {
             </tr>
           </tbody>
         </table>
-
-        <Modal open={open} onClose={this.onCloseModal} center>
-          <center>
-            <form action="#">
-              <div className="mdl-textfield mdl-js-textfield">
-                <label>User Name</label>
-                <input
-                  className="mdl-textfield__input myinput"
-                  type="text"
-                  placeholder="Enter User Name"
-                />
-              </div>
-              <br />
-              <div className="mdl-textfield mdl-js-textfield">
-                <label>Enter User Email</label>
-                <input
-                  className="mdl-textfield__input myinput"
-                  type="text"
-                  placeholder="User Email"
-                />
-              </div>
-              <br />
-              <div className="mdl-textfield mdl-js-textfield">
-                <label>User Password</label>
-                <input
-                  className="mdl-textfield__input myinput"
-                  type="text"
-                  placeholder="Enter User Password"
-                />
-              </div>
-            </form>
-          </center>
-        </Modal>
       </div>
     );
   }
 }
 
-export default Dashboard;
+export default withRouter(Dashboard);

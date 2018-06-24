@@ -1,17 +1,18 @@
 .input-container {
   display: flex;
-  overflow-x: scroll;
-  width: 500px;
-  background-color: #dfdfdf;
+  background-color: #efefef;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
-
+/* 
 @media screen and (max-width: 600px) {
   .input-container {
     display: flex;
     overflow-x: scroll;
     width: 370px;
   }
-}
+} */
 
 .box {
   display: block;
