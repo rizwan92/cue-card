@@ -9,14 +9,46 @@ class App extends Component {
     return (
       <div>
         <Switch>
-          <Route exact path={"/"} component={HomePage} />
-          <Route exact path={"/cue-card"} component={HomePage} />
-          <Route exact path={"/admin"} component={DashboardPage} />
-          <Route exact path={"/admin/user"} component={DashboardPage} />
-          <Route exact path={"/admin/adduser"} component={DashboardPage} />
-          <Route exact path={"/admin/card"} component={DashboardPage} />
-          <Route exact path={"/admin/addcard"} component={DashboardPage} />
-          <Route exact path={"/adminlogin"} component={AdminLogin} />
+          <Route
+            exact
+            path={process.env.PUBLIC_URL + "/"}
+            component={HomePage}
+          />
+          <Route
+            exact
+            path={process.env.PUBLIC_URL + "/cue-card"}
+            component={HomePage}
+          />
+          <Route
+            exact
+            path={process.env.PUBLIC_URL + "/admin"}
+            component={DashboardPage}
+          />
+          <Route
+            exact
+            path={process.env.PUBLIC_URL + "/admin/user"}
+            component={DashboardPage}
+          />
+          <Route
+            exact
+            path={process.env.PUBLIC_URL + "/admin/adduser"}
+            component={DashboardPage}
+          />
+          <Route
+            exact
+            path={process.env.PUBLIC_URL + "/admin/card"}
+            component={DashboardPage}
+          />
+          <Route
+            exact
+            path={process.env.PUBLIC_URL + "/admin/addcard"}
+            component={DashboardPage}
+          />
+          <Route
+            exact
+            path={process.env.PUBLIC_URL + "/adminlogin"}
+            component={AdminLogin}
+          />
           <Route component={NoMatch} />
         </Switch>
       </div>
