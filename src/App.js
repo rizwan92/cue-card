@@ -16,11 +16,6 @@ class App extends Component {
           />
           <Route
             exact
-            path={process.env.PUBLIC_URL + "/cue-card"}
-            component={HomePage}
-          />
-          <Route
-            exact
             path={process.env.PUBLIC_URL + "/admin"}
             component={DashboardPage}
           />
