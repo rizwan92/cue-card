@@ -51,7 +51,10 @@ export class DashboardPage extends Component {
             </div>
           </header>
           <nav className="demo-navigation mdl-navigation mdl-color--black-grey-800">
-            <NavLink className="mdl-navigation__link" to="/admin">
+            <NavLink
+              className="mdl-navigation__link"
+              to={process.env.PUBLIC_URL + "/admin"}
+            >
               <i
                 className="mdl-color-text--blue-grey-400 material-icons"
                 role="presentation"
@@ -59,7 +62,10 @@ export class DashboardPage extends Component {
                 home
               </i>Home
             </NavLink>
-            <NavLink className="mdl-navigation__link" to="/admin/user">
+            <NavLink
+              className="mdl-navigation__link"
+              to={process.env.PUBLIC_URL + "/admin/user"}
+            >
               <i
                 className="mdl-color-text--blue-grey-400 material-icons"
                 role="presentation"
@@ -67,7 +73,10 @@ export class DashboardPage extends Component {
                 local_offer
               </i>Users
             </NavLink>
-            <NavLink className="mdl-navigation__link" to="/admin/card">
+            <NavLink
+              className="mdl-navigation__link"
+              to={process.env.PUBLIC_URL + "/admin/card"}
+            >
               <i
                 className="mdl-color-text--blue-grey-400 material-icons"
                 role="presentation"
@@ -77,7 +86,10 @@ export class DashboardPage extends Component {
             </NavLink>
 
             <div className="mdl-layout-spacer" />
-            <NavLink className="mdl-navigation__link" to="">
+            <NavLink
+              className="mdl-navigation__link"
+              to={process.env.PUBLIC_URL + ""}
+            >
               <i
                 className="mdl-color-text--blue-grey-400 material-icons"
                 role="presentation"
@@ -92,36 +104,36 @@ export class DashboardPage extends Component {
         <main className="mdl-layout__content">
           <Route
             exact
-            path="/admin"
+            path={process.env.PUBLIC_URL + "/admin"}
             render={props => (
               <Dashboard {...props} search={this.state.search} />
             )}
           />
           <Route
             exact
-            path="/admin/home"
+            path={process.env.PUBLIC_URL + "/admin/home"}
             render={props => (
               <Dashboard {...props} search={this.state.search} />
             )}
           />
           <Route
             exact
-            path="/admin/user"
+            path={process.env.PUBLIC_URL + "/admin/user"}
             render={props => <UserPage {...props} search={this.state.search} />}
           />
           <Route
             exact
-            path="/admin/adduser"
+            path={process.env.PUBLIC_URL + "/admin/adduser"}
             render={props => <AddUser {...props} search={this.state.search} />}
           />
           <Route
             exact
-            path="/admin/card"
+            path={process.env.PUBLIC_URL + "/admin/card"}
             render={props => <CardPage {...props} search={this.state.search} />}
           />
           <Route
             exact
-            path="/admin/addcard"
+            path={process.env.PUBLIC_URL + "/admin/addcard"}
             render={props => <AddCard {...props} search={this.state.search} />}
           />
         </main>

@@ -8,7 +8,9 @@ export class Dashboard extends Component {
         <h1>User Page</h1>
 
         <button
-          onClick={() => this.props.history.push("/admin/adduser")}
+          onClick={() =>
+            this.props.history.push(process.env.PUBLIC_URL + "/admin/adduser")
+          }
           className="mdl-button mdl-js-button mdl-button--fab mdl-button--colored useraddbutton"
         >
           <i className="material-icons">add</i>
