@@ -1,6 +1,6 @@
 {
   "homepage": "http://rizwan92.github.io/cue-card",
-  "name": "nakul-dashboard",
+  "name": "cue-card",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
