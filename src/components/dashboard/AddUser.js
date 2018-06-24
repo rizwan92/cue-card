@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import { withRouter } from "react-router-dom";
 export class AddUser extends Component {
   render() {
     return (
@@ -38,8 +38,18 @@ export class AddUser extends Component {
               />
             </div>
             <br />
-            <button className="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+            <button
+              style={{ margin: 10 }}
+              className="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+            >
               Submit
+            </button>
+            <button
+              style={{ margin: 10 }}
+              onClick={() => this.props.history.push("/admin/user")}
+              className="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+            >
+              Cancel
             </button>
           </form>
         </center>
@@ -48,4 +58,4 @@ export class AddUser extends Component {
   }
 }
 
-export default AddUser;
+export default withRouter(AddUser);

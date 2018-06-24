@@ -3,17 +3,20 @@ import { Route, Switch } from "react-router-dom";
 import "./App.css";
 import DashboardPage from "./pages/DashboardPage";
 import HomePage from "./pages/HomePage";
+import AdminLogin from "./pages/AdminLogin";
 class App extends Component {
   render() {
     return (
       <div>
         <Switch>
           <Route exact path="/" component={HomePage} />
-          <Route exact path="/dashboard" component={DashboardPage} />
-          <Route exact path="/dashboard/user" component={DashboardPage} />
-          <Route exact path="/dashboard/adduser" component={DashboardPage} />
-          <Route exact path="/dashboard/card" component={DashboardPage} />
-          <Route exact path="/dashboard/addcard" component={DashboardPage} />
+          <Route exact path="/cue-card" component={HomePage} />
+          <Route exact path="/admin" component={DashboardPage} />
+          <Route exact path="/admin/user" component={DashboardPage} />
+          <Route exact path="/admin/adduser" component={DashboardPage} />
+          <Route exact path="/admin/card" component={DashboardPage} />
+          <Route exact path="/admin/addcard" component={DashboardPage} />
+          <Route exact path="/adminlogin" component={AdminLogin} />
           <Route component={NoMatch} />
         </Switch>
       </div>

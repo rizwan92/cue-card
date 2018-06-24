@@ -5,7 +5,7 @@ export class HomePage extends Component {
     return (
       <div>
         <h1>Home Page</h1>
-        <a href="/dashboard">Dashboard</a>
+        <a href="/admin">Dashboard</a>
       </div>
     );
   }

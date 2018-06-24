@@ -173,3 +173,26 @@ body {
   height: 40px;
   font-size: 20px;
 }
+
+.admin-login {
+  min-height: 100vh;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.admin-login-box {
+  min-height: 350px;
+  min-width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.material-icons {
+  cursor: pointer;
+}
+
+.tableicon {
+  margin: 10px;
+}

@@ -51,7 +51,7 @@ export class DashboardPage extends Component {
             </div>
           </header>
           <nav className="demo-navigation mdl-navigation mdl-color--black-grey-800">
-            <NavLink className="mdl-navigation__link" to="/dashboard">
+            <NavLink className="mdl-navigation__link" to="/admin">
               <i
                 className="mdl-color-text--blue-grey-400 material-icons"
                 role="presentation"
@@ -59,7 +59,7 @@ export class DashboardPage extends Component {
                 home
               </i>Home
             </NavLink>
-            <NavLink className="mdl-navigation__link" to="/dashboard/user">
+            <NavLink className="mdl-navigation__link" to="/admin/user">
               <i
                 className="mdl-color-text--blue-grey-400 material-icons"
                 role="presentation"
@@ -67,7 +67,7 @@ export class DashboardPage extends Component {
                 local_offer
               </i>Users
             </NavLink>
-            <NavLink className="mdl-navigation__link" to="/dashboard/card">
+            <NavLink className="mdl-navigation__link" to="/admin/card">
               <i
                 className="mdl-color-text--blue-grey-400 material-icons"
                 role="presentation"
@@ -92,36 +92,36 @@ export class DashboardPage extends Component {
         <main className="mdl-layout__content">
           <Route
             exact
-            path="/dashboard"
+            path="/admin"
             render={props => (
               <Dashboard {...props} search={this.state.search} />
             )}
           />
           <Route
             exact
-            path="/dashboard/home"
+            path="/admin/home"
             render={props => (
               <Dashboard {...props} search={this.state.search} />
             )}
           />
           <Route
             exact
-            path="/dashboard/user"
+            path="/admin/user"
             render={props => <UserPage {...props} search={this.state.search} />}
           />
           <Route
             exact
-            path="/dashboard/adduser"
+            path="/admin/adduser"
             render={props => <AddUser {...props} search={this.state.search} />}
           />
           <Route
             exact
-            path="/dashboard/card"
+            path="/admin/card"
             render={props => <CardPage {...props} search={this.state.search} />}
           />
           <Route
             exact
-            path="/dashboard/addcard"
+            path="/admin/addcard"
             render={props => <AddCard {...props} search={this.state.search} />}
           />
         </main>
