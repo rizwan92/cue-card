@@ -24,7 +24,9 @@ export class AdminLogin extends Component {
             </div>
             <br />
             <button
-              onClick={() => this.props.history.push("/admin")}
+              onClick={() =>
+                this.props.history.push(process.env.PUBLIC_URL + "/admin")
+              }
               className="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
             >
               Submit

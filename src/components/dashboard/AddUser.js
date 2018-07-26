@@ -46,7 +46,9 @@ export class AddUser extends Component {
             </button>
             <button
               style={{ margin: 10 }}
-              onClick={() => this.props.history.push("/admin/user")}
+              onClick={() =>
+                this.props.history.push(process.env.PUBLIC_URL + "/admin/user")
+              }
               className="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
             >
               Cancel
